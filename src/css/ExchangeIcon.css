@@ -1,0 +1,19 @@
+.exchange-icon-container {
+  position: fixed;
+  right: 90px;
+  top: 180px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  gap: 36px;
+}
+
+.exchange-icon-container svg {
+  cursor: pointer;
+}
+
+.exchange-icon-container svg:hover {
+  color: #65f0bf !important;
+}

@@ -1,0 +1,21 @@
+.home{
+    width: 75.5%;
+    height: auto;
+    padding-bottom: 30px;
+    margin: auto;
+    margin-top: 3.5%;
+    padding: 0px 40px;
+}
+.hometext{
+    padding-right: 215px;
+}
+.home h2{
+    color: white;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.home h2 span{
+    color: #7B7DFB;
+}

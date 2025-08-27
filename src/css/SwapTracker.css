@@ -1,0 +1,52 @@
+.swap-tracker {
+  position: fixed;
+  top: 542px;
+  left: 0px !important;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  background-color: #2b3138;
+  rotate: 270deg;
+  transform-origin: top left;
+  padding: 11px 14px;
+  gap: 5px;
+  border-radius: 0 0 8px 8px;
+}
+
+.tracker-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.swap-tracker h2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #f0f0f1;
+  margin: 0;
+}
+
+.swap-tracker svg {
+  margin-top: -2px;
+}
+
+.swap-head{
+    height: 200px;
+    background-color: red;
+    margin-top: 55px;
+    rotate: 90deg;
+}
+
+.input-group{
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.swap-tracker.expanded{
+    height: auto;
+}
