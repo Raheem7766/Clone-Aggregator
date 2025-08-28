@@ -1,0 +1,175 @@
+.about {
+  width: 71%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.about1 {
+  width: 100%;
+  color: #abb6c1;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.about1 span {
+  color: white;
+}
+
+.about2 {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  border-bottom: 1px solid #282d33;
+  display: flex;
+}
+
+.about3 {
+  width: 50%;
+  height: 100%;
+  padding-right: 40px;
+}
+
+.about3 h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+  margin-top: 147px;
+}
+
+.about3 p {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+
+.about4 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 180px;
+}
+
+.about4 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.about5 {
+  width: 100%;
+  height: auto;
+  padding-top: 1px;
+}
+
+.about5 h3 {
+  font-size: 43px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.about6 {
+  width: 100%;
+  height: auto;
+  margin-top: 67px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about7 {
+  height: auto;
+  width: 31.8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  margin-bottom: 25px;
+}
+
+.about7 img {
+  width: 12%;
+}
+
+.about7 h4 {
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  margin-top: 8px;
+}
+
+.about7 p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #abb6c1;
+  text-align: center;
+  width: 83%;
+  margin-top: 3px;
+}
+
+.about8 {
+  padding-left: 0;
+}
+
+.about9 {
+  width: 100%;
+  height: 477px;
+  padding: 1px 139px;
+  display: flex;
+  gap: 188px;
+  padding-top: 38px;
+}
+
+.about10 {
+  height: 282px;
+  width: 30%;
+}
+
+.about10 img {
+  height: 100%;
+  width: 100%;
+}
+
+.about11 {
+  height: 282px;
+  width: max-content;
+}
+
+.about11 h1 {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+  padding-top: 80px;
+}
+
+.about11 p {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding-top: 12px;
+}
+
+.about11 button {
+  border: none;
+  outline: none;
+  background-color: #65f0bf;
+  margin-top: 48px;
+  padding: 12px 29px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+}
+
+.about11 button:hover{
+    background-color: #95FBD7;
+}

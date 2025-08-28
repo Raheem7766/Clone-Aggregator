@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../css/Navbar.css';
 import logo from "../assets/logo.svg";
 import { FaChevronDown } from "react-icons/fa6";
-
 import ukFlag from "../assets/flags/ukFlag.png";
 import deFlag from "../assets/flags/deFlag.png";
 import frFlag from "../assets/flags/frFlag.png";
@@ -81,10 +80,10 @@ function Navbar() {
         
         <ul className="nav-menu">
           <li><a href="/how-to-use">How it works</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/affiliate-program">Affiliate Program</a></li>
         </ul>
       </div>
     </div>

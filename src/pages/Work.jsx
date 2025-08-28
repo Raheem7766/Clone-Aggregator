@@ -5,6 +5,7 @@ import step1 from "../assets/step1.png";
 import step2 from "../assets/step2.png";
 import step3 from "../assets/step3.png";
 import step4 from "../assets/step4.png";
+import { RiExternalLinkFill } from "react-icons/ri";
 
 function work() {
   return (
@@ -73,7 +74,43 @@ function work() {
             <img src={step4} alt="" />
           </div>
         </div>
+        <div className="ask">
+          <h2>Frequently asked questions</h2>
+          <div className="ask1">
+            <div className="ask2">
+              <h3>What is the recipient’s address?</h3>
+              <RiExternalLinkFill size={25} />
+            </div>
+            <div className="ask2 ask3">
+              <h3>
+                What is the wallet <br /> address?
+              </h3>
+              <RiExternalLinkFill size={25} />
+            </div>
+            <div className="ask2">
+              <h3>
+                How quick will my <br /> transaction be processed?
+              </h3>
+              <RiExternalLinkFill size={25} />
+            </div>
+            <div className="ask2">
+              <h3>What is Transaction ID?</h3>
+              <RiExternalLinkFill size={25} />
+            </div>
+            <div className="ask2">
+              <h3>
+                What is Transaction <br /> Hash?
+              </h3>
+              <RiExternalLinkFill size={25} />
+            </div>
+            <div className="ask2">
+              <h3>How can I cancel my transaction?</h3>
+              <RiExternalLinkFill size={25} />
+            </div>
+          </div>
+        </div>
       </div>
+
     </>
   );
 }

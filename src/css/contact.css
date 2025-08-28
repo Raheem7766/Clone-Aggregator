@@ -1,0 +1,183 @@
+.contact {
+  width: 71%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.contact1 {
+  width: 100%;
+  color: #abb6c1;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.contact1 span {
+  color: white;
+}
+
+.contact2 {
+  width: 100%;
+  height: auto;
+  margin-top: 64px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 41px;
+}
+
+.contact3 {
+  width: 35.9%;
+  height: auto;
+  padding-top: 1px;
+}
+
+.contact3 h2 {
+  font-size: 42px;
+  font-weight: 600;
+  color: white;
+  margin-top: 69px;
+}
+.contact3 p {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-top: 22px;
+  margin-bottom: 42px;
+}
+
+.contact3 h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  margin-top: 22px;
+  letter-spacing: 0.03rem;
+}
+
+.mail {
+  width: 100%;
+  height: 50px !important;
+  display: flex;
+  align-items: start;
+  gap: 17px;
+  padding-top: 10px;
+}
+
+.mail img {
+  height: auto;
+  object-fit: contain;
+  width: 1.8rem;
+}
+
+.mail p {
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.mail p:hover {
+  text-decoration: underline;
+}
+
+.part {
+  margin-top: 30px !important;
+}
+
+.contact4 {
+  width: 48.4%;
+  height: 561px;
+  background-color: #202529;
+  margin-top: 25px;
+  border-radius: 2px;
+  padding: 0 43px;
+}
+
+.contact4 h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  margin-top: 50px;
+  letter-spacing: 0.03rem;
+}
+
+.contact4 h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  margin-top: 14px;
+}
+
+.contact4 input {
+  width: 100%;
+  height: 48px;
+  margin-top: 19px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #4c4e56;
+  border-radius: 3px;
+  padding-left: 20px;
+  color: white;
+}
+
+.contact4 input:focus {
+  border: 1px solid #7b7dfb;
+}
+
+.contact4 textarea {
+  width: 100%;
+  height: 144px;
+  margin-top: 8px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #4c4e56;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: white;
+}
+
+.contact4 textarea:focus {
+  border: 1px solid #7b7dfb;
+}
+
+.contact4 button {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #65f0bf;
+  margin-top: 18px;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.contact4 button:hover {
+  background-color: #64f0bf;
+}
+
+.contact4 h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  margin-top: 34px;
+  text-align: center;
+}
+
+.contact4 p {
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.contact4 p span {
+  color: #65f0bf;
+  cursor: pointer;
+}
+
+.contact4 p span:hover {
+    text-decoration: underline;
+}
+

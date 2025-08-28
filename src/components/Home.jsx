@@ -6,6 +6,7 @@ import "../css/home.css";
 import ExchangeBox from "./ExchangeBox";
 import Terms from "./Terms";
 import Footer from "./Footer";
+
 function Home() {
   return (
     <div>
