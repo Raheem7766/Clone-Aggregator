@@ -70,18 +70,37 @@ function Footer() {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
+  const [visibleCount, setVisibleCount] = useState(11);
 
   useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth < 768) {
+        setVisibleCount(4);
+      } else if (window.innerWidth < 1024) {
+        setVisibleCount(7); 
+      } else {
+        setVisibleCount(11); 
+      }
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
+
+useEffect(() => {
     const interval = setInterval(() => {
       setStartIndex((prev) => (prev + 1) % images.length);
-    }, 2000); // 2 second per slide
+    }, 2000);
     return () => clearInterval(interval);
   }, [images.length]);
 
   const visibleImages = [
-    ...images.slice(startIndex, startIndex + 11),
-    ...images.slice(0, Math.max(0, startIndex + 11 - images.length)),
+    ...images.slice(startIndex, startIndex + visibleCount),
+    ...images.slice(0, Math.max(0, startIndex + visibleCount - images.length)),
   ];
+
 
   return (
     <>
@@ -146,7 +165,7 @@ function Footer() {
             <div className="footer4 footcom">
               <h3>Community</h3>
               <div className="footicon">
-                <BsFillSendFill />
+                <BsFillSendFill size={18}/>
                 <BiSolidRightTopArrowCircle size={20} />
                 <FaXTwitter size={19} />
                 <FaFacebookF size={19} />

@@ -7,46 +7,57 @@
 
 .exchange-header {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 0;
   height: 55px;
 }
 
 .exchnage-head {
+  height: 100%;
   display: flex;
 }
 
 .find {
-  height: max-content;
+  height: 70%;
   border: 2px solid #7b7dfb;
   border-radius: 8px;
-  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 8px;
+  padding-top: 6px;
+}
+
+.find h4 {
   font-size: 14px;
   color: #7b7dfb;
 }
 
+.find svg {
+  margin-top: -5px;
+}
+
 .see {
-  height: 50px;
+  height: 65%;
+  width: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.see h2 {
-  font-size: 12px;
-  font-weight: 400;
-  margin-left: 10px;
-  margin-top: 3px;
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgb(120, 122, 125);
+  margin: 0px 1rem;
 }
 
-.dot {
-  width: 5px;
-  height: 5px;
-  background-color: #797a7d;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 5px;
+.see h5 {
+  font-size: 13px !important;
+  font-weight: 400;
+  margin-top: 4px;
 }
 
 .bold {
@@ -54,13 +65,21 @@
   color: #fdfdfd !important;
 }
 
-.star {
-  width: 25%;
+.seeimg {
+  height: 100%;
+  width: 10.4%;
   margin-left: 12px;
+  margin-top: -10px;
+}
+
+.star {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .exchnage-tab-btn {
-  width: 38.2%;
+  width: 42%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -70,7 +89,6 @@
 .exchangetab {
   width: 76.5%;
   height: 100%;
-  background-color: #7b7dfb;
   display: flex;
 }
 
@@ -85,6 +103,8 @@
   width: 50%;
   justify-content: center;
   gap: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .exchnagebtn.active {
@@ -199,6 +219,7 @@
 }
 
 .payCount input {
+  width: max-content;
   background-color: transparent;
   border: none;
   outline: none;
@@ -515,7 +536,7 @@
 }
 
 .btns {
-  width: 36%;
+  width: max-content;
   height: 60px;
   position: absolute;
   right: 36px;
@@ -523,11 +544,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .btn1 {
   height: 100% !important;
-  width: 47.2%;
+  width: max-content;
+  padding: 0 32px;
   background-color: #2a4cbb;
   color: white;
   border: none;
@@ -542,7 +565,7 @@
 }
 .btn2 {
   height: 100%;
-  width: 49.2%;
+  padding: 0 39px;
   background-color: #65f0bf;
   color: #191d21;
   border: none;
@@ -611,6 +634,7 @@
 }
 
 .dex-send .pay-balance {
+  width: max-content;
   padding-top: 15px;
   padding-left: 20px;
 }
@@ -641,7 +665,6 @@
   background-color: #282d31;
   display: flex;
   align-items: center;
-  /* gap: 25px; */
   cursor: pointer;
   padding: 0 16px;
   border-top-right-radius: 5px;
@@ -758,7 +781,6 @@
   flex-direction: column;
   padding-right: 28px;
   padding-left: 51px;
-  background-color: #282d31;
   padding-bottom: 0;
 }
 
@@ -782,40 +804,390 @@
   left: 50%;
   transform: translate(-50%, -88%);
   flex-direction: column;
-  background-color: #292E32;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+  background-color: #292e32;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.dexarrow:hover{
-    background-color: #797BF6   ;
+.dexarrow:hover {
+  background-color: #797bf6;
 }
-.arrowright{
+.arrowright {
+  margin-left: 10px;
+  color: #65f0bf;
+}
+.arrowleft {
+  margin-top: -10px;
+  margin-left: -5px;
+}
+.dexarrow:hover .arrowright {
+  color: white;
+}
+
+.arrowright1 {
+  margin-top: -10px;
+}
+
+.arrowleft1 {
+  margin-left: 5px;
+  color: #65f0bf;
+}
+
+.termhead {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #abb6c1;
+  width: 100% !important;
+}
+
+.termhead span {
+  color: white;
+}
+
+.mblauto,.mblamount,.mblfee {
+  display: none;
+}
+
+@media (max-width: 1025px) {
+  .exchange-container {
+    padding: 0 40px;
+    margin-top: 3px;
+  }
+  .exchange-header {
+    justify-content: space-between;
+  }
+  .exchnage-head {
+    gap: 15px;
+    width: 62%;
+  }
+  .find {
+    width: max-content !important;
+  }
+  .find h4 span {
+    display: none !important;
+  }
+  .see {
+    width: max-content;
+    justify-content: flex-start !important;
+  }
+
+  .dot {
+    margin: 0 0.7rem;
+  }
+
+  .seeimg {
+    width: 14%;
+    margin-left: 0;
+  }
+  .exchnage-tab-btn {
+    width: 37% !important;
+    height: 100%;
+  }
+  .exchangetab {
+    width: 100%;
+  }
+  .exchange-wallet {
+    padding: 23px 18px;
+  }
+  .btns {
+    right: 28px;
+    bottom: -25px;
+    gap: 16px;
+  }
+  .btnconnect {
+    padding: 0 43px;
+  }
+  .btneth {
+    padding: 0 24px;
+  }
+  .dex-send .pay-balance {
+    width: 10%;
+  }
+  .dexdrop {
+    width: 42%;
+  }
+  .dexright {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  .exchange-container {
+    padding: 0 2rem;
+    margin-top: 8px;
+  }
+
+  .find h4 {
+    display: none;
+  }
+
+  .our {
+    display: none;
+  }
+
+  .seeimg {
+    width: 17%;
+  }
+
+  .exchnage-tab-btn {
+    width: 59.5% !important;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .dex {
+    background-color: #24292d;
+  }
+
+  .dexswap {
+    flex-direction: column;
+  }
+
+  .dexarrow {
+    transform: rotate(90deg);
+    left: 47%;
+    top: 40%;
+    z-index: 1;
+  }
+  .dex {
+    height: auto;
+  }
+
+  .dexleft,
+  .dexright {
+    width: 100%;
+    height: max-content;
+  }
+  .wallet-head {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dexleft {
+    padding-right: 30px;
+    padding-bottom: 0;
+  }
+  .dexdrop {
+    width: 25.5%;
+  }
+  .dexamount,
+  .fee,
+  .wallet-head-auto,
+  .dexamountright {
+    display: none;
+  }
+  .dexright {
+    padding-left: 28px;
+    padding-top: 0;
+  }
+  .wallet-head {
+    width: 100%;
+  }
+  .wallet-head-count {
+    width: 50%;
+  }
+  .mblauto {
+    display: block;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  }
+  .mblamount,
+  .mbldex {
+    display: block;
+    padding: 0 15px;
+  }
+  .mblamount {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mbldex {
+    width: 50%;
+  }
+  .mblfee {
+    display: block;
+    padding: 0 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .exchange-wallet {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .amount {
+    flex-direction: column;
+  }
+  .amount-pay {
+    width: 100%;
+  }
+  .arrow {
+    transform: rotate(90deg);
+    top: 39%;
+  }
+  .paybottom {
+    margin-bottom: 5px;
+  }
+  .btns {
+    right: 24px;
+  }
+  .btneth span {
+    display: none;
+  }
+  .btneth {
+    padding: 0 15px;
+    gap: 10px;
+  }
+  .termexchnage {
+    width: 45% !important;
+  }
+  .exchange-wallet {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .exchange-container {
+    padding: 0 0.9rem;
+    margin-top: 0;
+  }
+  .exchange-header {
+    flex-direction: column;
+    height: auto;
+  }
+  .exchnage-head,
+  .exchnage-tab-btn {
+    width: 100% !important;
+  }
+  .exchnage-head {
+    gap: 5px;
+  }
+  .find {
+    padding: 10px 13px;
+  }
+  .see {
+    padding-top: 3px;
+  }
+  .seeimg {
+    margin-top: 8px;
     margin-left: 10px;
-    color: #65F0BF;
-}
-.arrowleft{
-    margin-top: -10px;
-    margin-left: -5px;
-}
-.dexarrow:hover .arrowright{
-    color: white;
+    width: 19%;
+  }
+  .exchnage-tab-btn {
+    margin-top: 17px;
+  }
+  .exchnagebtn {
+    height: 50px;
+  }
+  .exchange-wallet {
+    padding-left: 17px;
+    padding-right: 8px;
+    padding-bottom: 80px;
+  }
+  .wallet-head-auto span {
+    display: none;
+  }
+  .amount-pay {
+    padding: 9px 15px;
+  }
+  .amountleft {
+    width: max-content !important;
+  }
+  .slip {
+    flex-direction: column;
+    height: auto;
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
+  .btns {
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+    bottom: 20px;
+  }
+  .btnconnect {
+    width: 75%;
+  }
+  .termexchnage {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .dexswap{
+    padding: 0;
+  }
+  .dexleft{
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .mblauto span{
+    display: none;
+  }
+  .dexdrop{
+    width: 40% !important;
+  }
+  .dexchev{
+    margin-left: 20px !important;
+  }
+  .mblamount{
+    flex-direction: column;
+    padding: 0 5px;
+  }
+  .mbldex{
+    width: 100%;
+  }
+  .mblfee{
+    padding: 0 18px;
+    padding-bottom: 60px !important;
+  }
+  .dexbtn button{
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .dexarrow{
+    top: 32%;
+    left: 42%;
+  }
+  .termhead{
+    width: 100%;
+    text-align: center;
+  }
+  .seeh2{
+    font-size: 14px !important;
+  }
 }
 
-.arrowright1{
-    margin-top: -10px;
+@media (max-width: 380px) {
+  .exchange-container {
+    width: 100%;
+    padding: 0;
+  }
+  .payCount input {
+    margin-right: -40px;
+  }
 }
 
-.arrowleft1{
-    margin-left: 5px;
-    color: #65F0BF;
-}
-
-.term{
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 15px;
-    color: #ABB6C1;
-}
-
-.term span{
-    color: white;
+@media (max-width: 325px) {
+  .wallet-head{
+    padding: 0;
+  }
+  .wallet-head-count{
+    width: max-content !important;
+  }
+  .mblauto{
+    width: max-content;
+  }
+  .arrow{
+    left: 44%;
+  }
+  .rightinput{
+    margin-right: -40px;
+  }
+  .slip1{
+    width: 100%;
+  }
+  .dexdrop{
+    width: 50% !important;
+  }
 }

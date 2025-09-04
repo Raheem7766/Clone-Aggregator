@@ -1,10 +1,11 @@
 .swap-tracker {
+  height: 46px;
+  width: 127px;
   position: fixed;
   top: 542px;
   left: 0px !important;
   z-index: 1000;
   display: flex;
-  flex-direction: column;
   align-items: center !important;
   justify-content: center !important;
   flex-direction: column;
@@ -12,14 +13,16 @@
   background-color: #2b3138;
   rotate: 270deg;
   transform-origin: top left;
-  padding: 11px 14px;
   gap: 5px;
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 6px 6px;
 }
 
 .tracker-header {
+  height: max-content;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   cursor: pointer;
 }
@@ -30,23 +33,87 @@
   color: #f0f0f1;
   margin: 0;
 }
-
+.swap-tracker:hover h2{
+  color: #64F0BF;
+}
 .swap-tracker svg {
   margin-top: -2px;
+  color: #f0f0f1;
 }
 
-.swap-head{
-    height: 200px;
-    background-color: red;
-    margin-top: 55px;
-    rotate: 90deg;
+.swap-tracker:hover svg{
+  color: #64F0BF;
 }
 
-.input-group{
-    margin-left: 0;
-    margin-top: 0;
+.swap-head {
+  height: 130px;
+  margin-top: 55px;
+  rotate: 90deg;
+  width: max-content;
+  margin-top: 178px;
+  transition: 0.4s ease linear;
 }
 
-.swap-tracker.expanded{
-    height: auto;
+.swap-tracker.expanded {
+  height: 500px;
+  width: 180px;
+  top: 570px;
+  justify-content: left !important;
+  padding-top: 20px;
 }
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #7b7dfb;
+  border-radius: 4px;
+  padding: 15px;
+  width: 400px;
+  color: white;
+}
+
+.input-container input::placeholder {
+  color: #abb6c1;
+}
+
+.input-label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  background-color: #2b3139;
+  color: #7b7dfb;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.input-container button{
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(100, 240, 191);
+  color: rgb(25, 29, 33);
+  margin-top: 15px;
+}
+
+.input-container button:hover{
+  background-color: #65F0BF;
+}
+
+@media (max-width: 767px) {
+  .swap-tracker {
+    display: none;
+  }
+}
+
+

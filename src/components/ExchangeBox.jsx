@@ -7,7 +7,7 @@ import { VscSettings } from "react-icons/vsc";
 import { MdRefresh } from "react-icons/md";
 import { FaChevronDown, FaChevronUp, FaChevronRight } from "react-icons/fa6";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa6";
-import { IoInformationCircleOutline } from "react-icons/io5";
+import { IoClipboardSharp, IoInformationCircleOutline } from "react-icons/io5";
 import { BsFillFuelPumpFill } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import rubic from "../assets/rubic.webp";
@@ -38,14 +38,13 @@ function ExchangeBox() {
     icon: rubic,
   });
   const [selectedRightCurrency, setSelectedRightCurrency] = useState({
-    code: "USDT",
-    name: "Tether",
-    icon: usdc,
+    code: "BNB",
+    name: "BNB",
+    icon: bnb,
   });
 
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Sample cryptocurrency data
   const cryptocurrencies = [
     { code: "ETH", name: "Ethereum", icon: eth },
     { code: "RBC", name: "Rubic", icon: rubic },
@@ -100,13 +99,20 @@ function ExchangeBox() {
         <div className="exchange-header">
           <div className="exchnage-head">
             <div className="find">
-              We find the best exchange Web3 routes in one click
+              <h4>
+                <span>We find</span> The best exchange Web3 routes{" "}
+                <span>in one click</span>
+              </h4>
+              <IoClipboardSharp size={20} />
             </div>
             <div className="see">
-              <div className="dot"></div>{" "}
-              <h2>
-                See our <span className="bold">349</span> reviews on
-              </h2>
+              <div className="dot"></div>
+              <h5 className="seeh2">
+                <span className="our">See our</span>{" "}
+                <span className="bold">349</span> reviews on
+              </h5>
+            </div>
+            <div className="seeimg">
               <img src={star} alt="" className="star" />
             </div>
           </div>
@@ -141,8 +147,8 @@ function ExchangeBox() {
                   <div className="wallet-count">1 OF 3</div>
                   <h3>Connect Wallet</h3>
                 </div>
-                <div className="wallet-head-auto">
-                  Auto refreshes in {countdown} sec
+                <div className="wallet-head-auto mblauto">
+                  <span> Auto refreshes in {countdown} sec</span>
                   <div className="refresh">
                     <MdRefresh
                       size={22}
@@ -158,7 +164,7 @@ function ExchangeBox() {
                 {!isSwapped ? (
                   <>
                     {/* Left (You Pay) */}
-                    <div className="amount-pay">
+                    <div className="amount-pay paybottom">
                       <div className="amountPar">
                         <div className="amountleft">
                           <div className="pay-balance">
@@ -282,7 +288,7 @@ function ExchangeBox() {
                     <div className="amount-pay">
                       <div className="amountPar">
                         <div className="amountleft">
-                          <div className="pay-balance">
+                          <div className="pay-balance rightinput">
                             You get
                             <h4 className="payCount">
                               {loading ? (
@@ -645,7 +651,7 @@ function ExchangeBox() {
                 </div>
               </div>
               <div className="btns">
-                <button className="btn1">
+                <button className="btn1 btneth">
                   <div className="wallet-Icon walletbg">
                     {loading ? (
                       <div className="Imgskeleton"></div>
@@ -653,9 +659,9 @@ function ExchangeBox() {
                       <img src={rubic} alt="" />
                     )}
                   </div>
-                  Ethereum <FaChevronDown size={14} />
+                  <span>Ethereum</span> <FaChevronDown size={14} />
                 </button>
-                <button className="btn2">Connect wallet</button>
+                <button className="btn2 btnconnect">Connect wallet</button>
               </div>
             </>
           )}
@@ -666,8 +672,13 @@ function ExchangeBox() {
             </div>
           )}
         </div>
-        <p className="term">
-          By clicking Exchange you agree with <span>Terms of Use</span> and <span>Privacy Policy</span>
+        <p
+          className={`termhead ${
+            activeTab == "exchange" ? "termexchnage" : ""
+          }`}
+        >
+          By clicking Exchange you agree with <span>Terms of Use</span> and{" "}
+          <span>Privacy Policy</span>
         </p>
       </div>
     </>

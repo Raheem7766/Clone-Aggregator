@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/affiliate.css";
 import { FiChevronsRight } from "react-icons/fi";
-import { MdOutlineChevronRight } from "react-icons/md";
+import { MdConnectedTv, MdOutlineChevronRight } from "react-icons/md";
 import best1 from "../assets/best1.svg";
 import best2 from "../assets/best2.svg";
 import best3 from "../assets/best3.svg";
@@ -13,7 +13,17 @@ import provide2 from "../assets/provide2.svg";
 import provide3 from "../assets/provide3.svg";
 import { IoMdCheckmark } from "react-icons/io";
 import api1 from "../assets/api1.png";
-import { CiWallet } from "react-icons/ci";
+import { CiUser, CiWallet } from "react-icons/ci";
+import start1 from "../assets/start1.svg";
+import start2 from "../assets/start2.svg";
+import start3 from "../assets/start3.svg";
+import link from "../assets/link.png";
+import create from "../assets/create.svg";
+import { PiDeviceMobile } from "react-icons/pi";
+import { RiCoinLine } from "react-icons/ri";
+import widget from "../assets/widget.png";
+import place1 from "../assets/place1.svg";
+import place2 from "../assets/place2.svg";
 
 function Affiliate() {
   const [sliderValue, setSliderValue] = useState(500);
@@ -27,8 +37,7 @@ function Affiliate() {
 
     setSliderValue(value);
 
-    // Update values (customize these calculations as needed)
-    const newVolume = Math.round(value * 0.65 + 325); // Approximate range 325-975
+    const newVolume = Math.round(value * 0.65 + 325);
     const newShare = (value / max).toFixed(1);
 
     setVolume(newVolume);
@@ -57,6 +66,7 @@ function Affiliate() {
           </div>
         </div>
       </div>
+
       <div className="exoli">
         <h2>Why Exolix?</h2>
         <p>
@@ -92,6 +102,7 @@ function Affiliate() {
           </div>
         </div>
       </div>
+
       <div className="exoli3">
         <div className="exoli4">
           <div className="exoli5">
@@ -100,7 +111,6 @@ function Affiliate() {
             </h2>
             <div className="volume">
               <div className="volume-section">
-                {/* Chart Grid Background */}
                 <div className="chart-grid">
                   <div
                     className="grid-line grid-vertical"
@@ -157,7 +167,6 @@ function Affiliate() {
                   ></div>
                 </div>
 
-                {/* Stats Section */}
                 <div className="stats-row">
                   <div className="stat-item">
                     <h3>Transactions' volume</h3>
@@ -169,7 +178,6 @@ function Affiliate() {
                   </div>
                 </div>
 
-                {/* Slider Section */}
                 <div className="slider-section">
                   <div className="slider-container">
                     <div className="slider-track-bg"></div>
@@ -198,10 +206,12 @@ function Affiliate() {
               </div>
               <div className="volume2">
                 <div className="volumeimg">
-                  <h4>You get</h4>
-                  <p>
-                    ~3.25 <span>BTC</span>
-                  </p>
+                  <div className="volumeget">
+                    <h4>You get</h4>
+                    <p>
+                      ~3.25 <span>BTC</span>
+                    </p>
+                  </div>
                   <button>Try now</button>
                 </div>
               </div>
@@ -274,6 +284,12 @@ function Affiliate() {
                 </div>
                 <p>Ampler opportunities for your users</p>
               </div>
+              <div className="affiliate3 apibtn">
+                <button>
+                  Become a partner <MdOutlineChevronRight />
+                </button>
+                <h3>How it works?</h3>
+              </div>
             </div>
             <div className="api3">
               <img src={api1} alt="" />
@@ -281,23 +297,255 @@ function Affiliate() {
           </div>
           <div className="api4">
             <div className="api5">Best for:</div>
-            <div className="api6">
-              <CiWallet size={24} color="#FFFFFF" />
-              Wallets
-            </div>
-            <div className="api7">
-              <CiWallet size={24} color="#FFFFFF" />
-              Payment systems
-            </div>
-            <div className="api7">
-              <CiWallet size={24} color="#FFFFFF" />
-              Aggregators
-            </div>
-            <div className="api7">
-              <CiWallet size={24} color="#FFFFFF" />
-              Crypto services
+            <div className="allwallet">
+              <div className="api6">
+                <CiWallet size={24} color="#FFFFFF" />
+                Wallets
+              </div>
+              <div className="api7 api8">
+                <CiWallet size={24} color="#FFFFFF" />
+                Payment systems
+              </div>
+              <div className="api7 api9">
+                <CiWallet size={24} color="#FFFFFF" />
+                Aggregators
+              </div>
+              <div className="api7 api10">
+                <CiWallet size={24} color="#FFFFFF" />
+                Crypto services
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="start">
+        <h2>How does it work?</h2>
+        <div className="start1">
+          <div className="startline"></div>
+          <MdOutlineChevronRight
+            size={20}
+            color="#dfdfe3"
+            className="starticon"
+          />
+          <div className="startline1"></div>
+          <MdOutlineChevronRight
+            size={20}
+            color="#dfdfe3"
+            className="starticon1"
+          />
+          <div className="start2">
+            <img src={start1} alt="" />
+            <h3>Implement Exolix API</h3>
+            <p>Integrate our API into your system</p>
+          </div>
+          <div className="start2 start3">
+            <img src={start2} alt="" />
+            <h3>Share it with audience</h3>
+            <p>Convert your active clients to successful exchanges</p>
+          </div>
+          <div className="start2 start4">
+            <img src={start3} alt="" />
+            <h3>Get monthly payouts in BTC</h3>
+            <p>Receive from 0.5% to 2% of each transaction</p>
+          </div>
+        </div>
+        <div className="startbtn">
+          <button>Get Started</button>
+        </div>
+      </div>
+
+      <div className="api link">
+        <div className="api1">
+          <div className="apitop">
+            <div className="api3">
+              <img src={link} alt="" />
+            </div>
+            <div className="api2">
+              <h2>Referral links</h2>
+              <p>
+                Share our service link with your audience and receive profit in
+                BTC from every referrals’ transaction
+              </p>
+              <div className="go2">
+                <div className="go3">
+                  <IoMdCheckmark />
+                </div>
+                <p>Easy integration in a couple of minutes</p>
+              </div>
+              <div className="go2 gotop">
+                <div className="go3">
+                  <IoMdCheckmark />
+                </div>
+                <p>Wide variety of links/banners to attract your audience</p>
+              </div>
+              <div className="go2 gotop">
+                <div className="go3">
+                  <IoMdCheckmark />
+                </div>
+                <p>Simple actions for substantial profit</p>
+              </div>
+              <div className="affiliate3 apibtn">
+                <button>
+                  Become a partner <MdOutlineChevronRight />
+                </button>
+                <h3>How it works?</h3>
+              </div>
+            </div>
+          </div>
+          <div className="api4 link1">
+            <div className="api5">Best for:</div>
+            <div className="allwallet allwallet1">
+              <div className="api6">
+                <CiUser size={24} color="#FFFFFF" />
+                Bloggers & Opinion leaders
+              </div>
+              <div className="api7">
+                <MdConnectedTv size={24} color="#FFFFFF" />
+                News websites
+              </div>
+              <div className="api7 link2">
+                <CiWallet size={24} color="#FFFFFF" />
+                Exchange rate aggregators
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="start">
+        <h2>How does it work?</h2>
+        <div className="start1">
+          <div className="startline"></div>
+          <MdOutlineChevronRight
+            size={20}
+            color="#dfdfe3"
+            className="starticon"
+          />
+          <div className="startline1"></div>
+          <MdOutlineChevronRight
+            size={20}
+            color="#dfdfe3"
+            className="starticon1"
+          />
+          <div className="start2">
+            <img src={create} alt="" />
+            <h3>Create link</h3>
+            <p>Create and copy referral link</p>
+          </div>
+          <div className="start2 start3">
+            <img src={start2} alt="" />
+            <h3>Drive your traffic</h3>
+            <p>
+              Place the link or banner to your website/blog/social media and
+              invite your users to exchange with Exolix
+            </p>
+          </div>
+          <div className="start2 start4">
+            <img src={start3} alt="" />
+            <h3>Get monthly payouts</h3>
+            <p>Receive from 0.5% to 2% of each transaction</p>
+          </div>
+        </div>
+        <div className="startbtn">
+          <button>Get Started</button>
+        </div>
+      </div>
+
+      <div className="api">
+        <div className="api1">
+          <div className="apitop">
+            <div className="api2">
+              <h2>Widgets</h2>
+              <p>
+                Implement Exolix’ Widget into your service or application and
+                let your users exchange cryptocurrencies without leaving your
+                platform!
+              </p>
+              <div className="go2">
+                <div className="go3">
+                  <IoMdCheckmark />
+                </div>
+                <p>High-quality exchange service on your own platform</p>
+              </div>
+              <div className="go2 gotop">
+                <div className="go3">
+                  <IoMdCheckmark />
+                </div>
+                <p>Ampler opportunities for your users</p>
+              </div>
+              <div className="go2 gotop">
+                <div className="go3">
+                  <IoMdCheckmark />
+                </div>
+                <p>Users stay on your platform</p>
+              </div>
+              <div className="affiliate3 apibtn">
+                <button>
+                  Become a partner <MdOutlineChevronRight />
+                </button>
+                <h3>How it works?</h3>
+              </div>
+            </div>
+            <div className="api3">
+              <img src={widget} alt="" />
+            </div>
+          </div>
+          <div className="api4 widge">
+            <div className="api5">Best for:</div>
+            <div className="allwallet allwallet1">
+              <div className="api6">
+                <RiCoinLine size={24} color="#FFFFFF" />
+                Coins & Tokens websites
+              </div>
+              <div className="api7 widge1">
+                <PiDeviceMobile size={24} color="#FFFFFF" />
+                Mobile Applications
+              </div>
+              <div className="api7 widge2">
+                <CiUser size={24} color="#FFFFFF" />
+                Publishers’ and advisers’ websites
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="start">
+        <h2>How does it work?</h2>
+        <div className="start1">
+          <div className="startline"></div>
+          <MdOutlineChevronRight
+            size={20}
+            color="#dfdfe3"
+            className="starticon"
+          />
+          <div className="startline1"></div>
+          <MdOutlineChevronRight
+            size={20}
+            color="#dfdfe3"
+            className="starticon1"
+          />
+          <div className="start2 widgep">
+            <img src={place1} alt="" />
+            <h3>Place widget</h3>
+            <p>Copy the script and place it to the source code of your web page</p>
+          </div>
+          <div className="start2 start3">
+            <img src={place2} alt="" />
+            <h3>Get transactions</h3>
+            <p>
+              Convert your active sessions to exchanges
+            </p>
+          </div>
+          <div className="start2 start4">
+            <img src={start3} alt="" />
+            <h3>Get monthly payouts in BTC</h3>
+            <p>Receive from 0.5% to 2% of each transaction</p>
+          </div>
+        </div>
+        <div className="startbtn">
+          <button>Get Started</button>
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/Terms.css";
 import limit from "../assets/limit.png";
 import secure from "../assets/secure.png";
@@ -53,6 +53,7 @@ import zenx from "../assets/zenx.png";
 import troca from "../assets/troca.svg";
 import coinsdo from "../assets/coinsdo.png";
 import starg from "../assets/starg.png";
+import { useNavigate } from "react-router-dom";
 
 function Terms() {
   const slides = [
@@ -83,7 +84,7 @@ function Terms() {
     {
       title: "Спасибо большое службе поддержки,за…",
       description:
-        "Спасибо большое службе поддержки,за оказанное содействие, внимание и быстрому реагированию проблемы . С уважением и искренней благодарностью !",
+        "Спасибо большое службе поддержки,за оказанное содействие, внимание и быстрому.",
       author: "Sofron",
       date: "23 Aug 2025",
       star: star5,
@@ -157,16 +158,34 @@ function Terms() {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
+  const [cardsToShow, setCardsToShow] = useState(4);
+
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      if (window.innerWidth < 768) {
+        setCardsToShow(1);
+      } else if (window.innerWidth < 1024) {
+        setCardsToShow(3);
+      } else {
+        setCardsToShow(4);
+      }
+    };
+
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+
+    return () => window.removeEventListener("resize", updateCardsToShow);
+  }, []);
 
   const handleNextpress = () => {
-    if (startIndex + 4 < cards.length) {
-      setStartIndex(startIndex + 4);
+    if (startIndex + cardsToShow < cards.length) {
+      setStartIndex(startIndex + cardsToShow);
     }
   };
 
   const handlePrevpress = () => {
-    if (startIndex - 4 >= 0) {
-      setStartIndex(startIndex - 4);
+    if (startIndex - cardsToShow >= 0) {
+      setStartIndex(startIndex - cardsToShow);
     }
   };
 
@@ -197,7 +216,7 @@ function Terms() {
     coinsdo,
     starg,
   ];
-
+  const navigate = useNavigate()
   return (
     <>
       <div className="terms">
@@ -449,7 +468,7 @@ function Terms() {
         </div>
 
         <div className="press3">
-          {cards.slice(startIndex, startIndex + 4).map((card) => (
+          {cards.slice(startIndex, startIndex + cardsToShow).map((card) => (
             <div key={card.id} className="press4">
               <img src={card.image} alt="" />
               <p>{card.description}</p>
@@ -467,7 +486,7 @@ function Terms() {
             </div>
           ))}
         </div>
-        <button>Become Exolix partner</button>
+        <button onClick={()=> navigate('/affiliate-program')}>Become Exolix partner</button>
       </div>
     </>
   );

@@ -38,6 +38,7 @@
   display: flex;
   padding-top: 57px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .footer4 {
@@ -113,7 +114,7 @@
 .footbottom {
   width: 100%;
   height: 138px;
-  background-color: #161A1E;
+  background-color: #161a1e;
   margin-top: 94px;
 }
 
@@ -191,15 +192,91 @@
 
 .footbottomimg {
   height: 100%;
-  width: 9%;
+  width: 8% ;
 }
 .footbottomimg img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: grayscale(1);
 }
 
-.last{
-    display: flex;
-    gap: 5px;
+
+.last {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 1440px) {
+  .footer1,
+  .footbottom1 {
+    width: 82%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1025px) {
+  .footer1,
+  .footbottom1 {
+    width: 91%;
+  }
+  .footcom,
+  .footprice,
+  .footpair {
+    margin-left: 0;
+    width: max-content;
+  }
+  .footcom {
+    /* display: ; */
+  }
+  .footer4 {
+    width: max-content;
+  }
+}
+@media (max-width: 768px) {
+  .footbottom2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .footer {
+    width: 100% !important;
+  }
+  .footer3 {
+    width: 100%;
+    gap: 0;
+  }
+  .footer4 {
+    width: 50% !important;
+    margin-bottom: 10px;
+  }
+  .footpair span {
+    display: none;
+  }
+  .footer2 {
+    width: 100%;
+  }
+  .footer2 img {
+    width: 25%;
+  }
+  .footbottomimg {
+    width: 33%;
+  }
+  .use h3 {
+    font-size: 12px;
+  }
+  .footbottom2{
+    gap: 10px;
+  }
+  .footcom h4{
+    font-size: 12px;
+  }
+  .footicon {
+    flex-wrap: wrap;
+  }
+  .footer2{
+    gap: 10px;
+  }
 }

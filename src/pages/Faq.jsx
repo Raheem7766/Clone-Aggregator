@@ -1,9 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FiChevronDown, FiChevronUp, FiChevronsRight } from "react-icons/fi";
 import "../css/faq.css";
 import faq from "../assets/faq.png";
 import faq1 from "../assets/faq1.png";
 import faq3 from "../assets/faq3.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 const faqData = [
   {
@@ -123,6 +128,8 @@ function Faq() {
   const aboutRef = useRef(null);
   const transactionsRef = useRef(null);
   const affiliateRef = useRef(null);
+  const navRef = useRef(null);
+const [active, setActive] = useState("about");
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -164,22 +171,36 @@ function Faq() {
             </div>
           </div>
           <div className="faq8">
-            <div className="faqbtn" onClick={() => scrollToSection(aboutRef)}>
-              About
-            </div>
-            <div
-              className="faqbtn faqbtn1"
-              onClick={() => scrollToSection(transactionsRef)}
-            >
-              Transactions
-            </div>
-            <div
-              className="faqbtn faqbtn1"
-              onClick={() => scrollToSection(affiliateRef)}
-            >
-              Affiliate program
-            </div>
-          </div>
+      <div
+        className={`faqbtn ${active === "about" ? "active" : "faqbtn1"}`}
+        onClick={() => {
+          setActive("about");
+          scrollToSection(aboutRef);
+        }}
+      >
+        About
+      </div>
+
+      <div
+        className={`faqbtn ${active === "transactions" ? "active" : "faqbtn1"}`}
+        onClick={() => {
+          setActive("transactions");
+          scrollToSection(transactionsRef);
+        }}
+      >
+        Transactions
+      </div>
+
+      <div
+        className={`faqbtn ${active === "affiliate" ? "active" : "faqbtn1"}`}
+        onClick={() => {
+          setActive("affiliate");
+          scrollToSection(affiliateRef);
+        }}
+      >
+        Affiliate program
+      </div>
+    </div>
         </div>
       </div>
     </div>

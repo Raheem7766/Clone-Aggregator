@@ -17,3 +17,10 @@
 .exchange-icon-container svg:hover {
   color: #65f0bf !important;
 }
+
+
+@media (max-width: 1024px) {
+  .exchange-icon-container{
+    display: none;
+  }
+}

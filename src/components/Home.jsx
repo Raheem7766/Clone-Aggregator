@@ -1,11 +1,8 @@
 import React from "react";
-import Navbar from "./Navbar";
-import ExchangeIcon from "./ExchangeIcon";
 import SwapTracker from "./SwapTracker";
 import "../css/home.css";
 import ExchangeBox from "./ExchangeBox";
 import Terms from "./Terms";
-import Footer from "./Footer";
 
 function Home() {
   return (
@@ -23,7 +20,6 @@ function Home() {
         <ExchangeBox />
         <Terms />
       </div>
-      <Footer />
     </div>
   );
 }

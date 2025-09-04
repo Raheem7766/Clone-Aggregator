@@ -437,7 +437,7 @@
 
 .provide1 {
   width: 67.6%;
-  height: 515px;
+  height: auto;
   margin: auto;
   margin-top: 76px;
   display: flex;
@@ -445,7 +445,7 @@
 }
 
 .provide2 {
-  height: 100%;
+  height: 515px;
   width: 32%;
   background-color: #fbfbfc;
   border: 1px solid #f2f2f4;
@@ -508,7 +508,6 @@
 .api1 {
   width: 68%;
   height: 100%;
-  background-color: gray;
   margin: auto;
   padding-top: 143px;
 }
@@ -518,13 +517,11 @@
   justify-content: space-between;
   padding-right: 4px;
   height: max-content;
-  background-color: red;
 }
 
 .api2 {
   width: 39.7%;
   height: max-content;
-  background-color: blue;
 }
 
 .api2 h2 {
@@ -559,7 +556,6 @@
 .api3 {
   width: 44.7%;
   height: 370px;
-  background-color: green;
   margin-top: 20px;
 }
 
@@ -571,26 +567,32 @@
 .api4 {
   width: 100%;
   height: 127px;
-  background-color: blue;
-  margin-top: 118px;
+  margin-top: 84px;
   display: flex;
   align-items: center;
+  border-top: 1px solid #292937;
+  padding-bottom: 40px;
 }
 
 .api5 {
   font-size: 18px;
   font-weight: 700;
   color: white;
-  background-color: red;
   width: 25.7%;
+}
+
+.allwallet {
+  width: max-content;
+  display: flex;
+  justify-content: end;
+  gap: 90px;
 }
 
 .api6 {
   font-size: 18px;
   font-weight: 400;
   color: white;
-  background-color: gray;
-  width: 12.7%;
+  /* width: 12.7%; */
   display: flex;
   align-items: center;
   justify-content: end;
@@ -601,10 +603,732 @@
   font-size: 18px;
   font-weight: 400;
   color: white;
-  background-color: gray;
   width: max-content;
   display: flex;
   align-items: center;
   justify-content: end;
   gap: 10px;
+}
+
+.api8 {
+  /* width: 22%; */
+}
+
+.api9 {
+  /* width: 18.5%; */
+}
+
+.api10 {
+  /* width: 20.5%; */
+}
+
+.apibtn button {
+  gap: 0;
+  padding: 12px 25px;
+}
+
+.start {
+  width: 100%;
+  height: 66.5vh;
+  padding-top: 128px;
+  background-color: white;
+}
+
+.start h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #191d21;
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+
+.start1 {
+  width: 65.5%;
+  height: 137px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.start2 {
+  height: 100%;
+  width: 31%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.start2 img {
+  width: 15%;
+}
+
+.start2 h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #191d21;
+  margin-top: 20px;
+}
+.start2 p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #161628;
+}
+
+.start3 {
+  padding-left: 0;
+}
+
+.start3 p {
+  width: 90%;
+  text-align: center;
+}
+
+.start4 {
+  padding-left: 0;
+}
+
+.start4 p {
+  width: 80%;
+  text-align: center;
+}
+
+.startline {
+  width: 23.3%;
+  height: 2px;
+  border: 1px solid #dfdfe3;
+  position: absolute;
+  top: 31px;
+  left: 21%;
+}
+
+.starticon {
+  position: absolute;
+  top: 22px;
+  left: 43.3%;
+  color: white;
+}
+
+.startline1 {
+  width: 23.3%;
+  height: 2px;
+  border: 1px solid #dfdfe3;
+  position: absolute;
+  top: 31px;
+  right: 22.5%;
+}
+
+.starticon1 {
+  position: absolute;
+  top: 22px;
+  right: 21.6%;
+  color: white;
+}
+
+.startbtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startbtn button {
+  border: none;
+  outline: none;
+  background-color: #65f0bf;
+  padding: 10px 29px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-top: 98px;
+}
+
+.startbtn button:hover {
+  background-color: #64f0bf;
+}
+
+.link {
+  height: 75.7vh;
+}
+
+.link .api1 .apitop .api3 {
+  width: 40%;
+  height: 352px;
+}
+
+.link .api1 .apitop {
+  justify-content: flex-start;
+  gap: 173px;
+}
+
+.link .api1 .apitop .api2 {
+  width: 45%;
+}
+
+.link1 .api6 {
+  width: max-content;
+  padding-left: 21px;
+}
+.allwallet1 {
+  gap: 0px;
+  flex-wrap: wrap !important;
+  /* background-color: red; */
+}
+.link1 .api7 {
+  width: max-content;
+  margin-left: 85px;
+}
+
+.link2 {
+  width: max-content !important;
+  padding-left: 0;
+}
+
+.widge .api5 {
+  width: 23%;
+}
+.widge .api6 {
+  width: max-content;
+}
+
+.widge1 {
+  margin-left: 72px;
+}
+
+.widge2 {
+  margin-left: 70px;
+}
+
+.widgep {
+  text-align: center;
+}
+
+.widgep p {
+  width: 90%;
+}
+
+@media (max-width: 1440px) {
+  .affiliate1 {
+    width: 79%;
+  }
+  .program {
+    width: 578px;
+    height: 460px;
+    background-position: center;
+  }
+  .exoli p {
+    width: 75%;
+  }
+  .exoli1 {
+    width: 77%;
+  }
+  .exoli2 p {
+    padding: 0px;
+  }
+  .exoli3 {
+    height: 77vh;
+  }
+  .exoli5 {
+    width: 79%;
+  }
+  .provide1 {
+    width: 79%;
+  }
+  .api1 {
+    width: 80%;
+  }
+  .start1 {
+    width: 73%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .affiliate {
+    height: auto;
+    padding-bottom: 263px;
+  }
+  .affiliate1 {
+    width: 92%;
+  }
+  .affiliate1 {
+    padding-top: 36px;
+  }
+  .affiliate1 h2 {
+    font-size: 42px;
+    line-height: 60px;
+    margin-top: 114px;
+    width: 60%;
+  }
+  .program {
+    width: 424px;
+    height: 503px;
+    background-size: cover;
+    background-image: url(https://exolix.com/static/media/af-program-iright-md.6e8b4b556715a23f1d70.png);
+    top: 113px;
+  }
+  .exoli p {
+    width: 79%;
+    font-size: 24px;
+  }
+  .exoli1 {
+    width: 92%;
+  }
+  .exoli2 p {
+    font-size: 18px;
+  }
+  .exoli3 {
+    height: auto;
+  }
+  .exoli4 {
+    background-image: none;
+  }
+  .exoli5 {
+    width: 100%;
+    padding: 105px 40px;
+  }
+  .exoli5 h2 {
+    width: 100%;
+    margin-top: 0;
+  }
+  .volume {
+    width: 100%;
+  }
+  .volume-section {
+    width: 91%;
+  }
+  .stats-row {
+    gap: 140px;
+  }
+  .provide1 {
+    width: 92%;
+  }
+  .api {
+    height: auto;
+  }
+  .api1 {
+    width: 92%;
+    padding-top: 103px;
+  }
+  .start1 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .affiliate {
+    flex-wrap: wrap;
+    padding-bottom: 580px;
+  }
+  .affiliate1 {
+    width: 89%;
+  }
+  .affiliate1 h2 {
+    width: 90%;
+  }
+  .program {
+    top: 443px;
+    width: 94.4%;
+    background-image: url(https://exolix.com/static/media/af-program-iright-sm.cb35eb282b511420ccce.png);
+    min-height: 433px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .exoli h2 {
+    font-size: 40px;
+    padding-top: 110px;
+  }
+  .exoli p {
+    width: 90%;
+    font-size: 24px;
+  }
+  .exoli1 {
+    width: 92%;
+  }
+  .exoli2 {
+    width: 49%;
+  }
+  .exoli2 p {
+    font-size: 16px;
+  }
+  .volume-section {
+    width: 60%;
+  }
+  .stats-row {
+    gap: 20px;
+  }
+  .provide h2 {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  .provide {
+    height: max-content !important;
+  }
+  .provide1 {
+    width: 90%;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .provide2 {
+    width: 48%;
+    padding-top: 44px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+  }
+  .provide2 h3 {
+    font-size: 20px;
+  }
+  .provide2 p {
+    font-size: 14px;
+  }
+  .provide2 button {
+    bottom: 50px;
+  }
+  .api {
+    padding-bottom: 20px;
+  }
+  .apitop {
+    flex-direction: column-reverse;
+  }
+  .api2,
+  .api3 {
+    width: 100%;
+    height: auto;
+  }
+  .api3 img {
+    width: 60%;
+  }
+  .api2 h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .api2 p {
+    font-size: 16px;
+  }
+  .api4 {
+    height: auto;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  .allwallet {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .api8,
+  .api9,
+  .api10,
+  .api6 {
+    width: max-content;
+  }
+  .start {
+    height: max-content;
+    padding: 50px 0;
+  }
+  .start1 {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .start2 {
+    width: 100%;
+    padding-left: 0;
+  }
+  .start2 img {
+    width: 7%;
+  }
+  .start h2 {
+    font-size: 28px;
+  }
+  .startbtn button {
+    margin-top: 50px;
+  }
+  .start3,
+  .start4 {
+    margin-top: 100px;
+  }
+  .startline {
+    transform: rotate(90deg);
+    width: 10%;
+    top: 30%;
+    left: 45%;
+  }
+  .starticon {
+    transform: rotate(90deg);
+    top: 35%;
+    left: 48.7%;
+  }
+  .startline1 {
+    transform: rotate(90deg);
+    width: 10%;
+    top: 68%;
+    left: 45%;
+  }
+  .starticon1 {
+    transform: rotate(90deg);
+    top: 72%;
+    left: 48.7%;
+  }
+  .link .apitop {
+    flex-direction: column;
+  }
+  .link .api1 .apitop .api3 {
+    height: auto;
+  }
+  .link .api1 .apitop {
+    gap: 0;
+  }
+  .link .api1 .apitop .api3 img {
+    width: 100%;
+  }
+  .link1 .api6 {
+    padding-left: 0;
+  }
+  .link1 .api7 {
+    margin-left: 0;
+  }
+  .allwallet1 {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .link .api1 .apitop .api2 {
+    width: 100%;
+  }
+  .link .api1 .apitop .api3 {
+    width: 60%;
+  }
+  .widge .api5 {
+    width: 100%;
+  }
+  .widge1 {
+    margin-left: 0;
+  }
+
+  .widge2 {
+    margin-left: 0px;
+  }
+  .allwallet1 .api6 {
+    font-size: 16px;
+  }
+  .allwallet1 .api7 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .affiliate1 {
+    width: 92%;
+    padding-top: 22px;
+    padding-bottom: 120px;
+  }
+  .affiliate1 h2 {
+    margin-top: 117px;
+    font-size: 28px;
+    line-height: 50px;
+    padding: 0 11px;
+    padding-right: 0;
+  }
+  .affiliate3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .program {
+    top: 427px;
+    width: 89%;
+    background-image: url(https://exolix.com/static/media/af-program-iright-xs.f6c981af80e506160b1e.png);
+  }
+  .exoli h2 {
+    font-size: 34px;
+    padding-top: 80px;
+  }
+  .exoli p {
+    width: 90%;
+    font-size: 18px;
+  }
+  .exoli1 {
+    width: 92%;
+  }
+  .exoli2 {
+    width: 100%;
+  }
+  .exoli2 p {
+    font-size: 16px;
+  }
+  .exoli5 {
+    width: 100%;
+    padding: 105px 25px;
+  }
+  .exoli5 h2 {
+    font-size: 30px;
+    line-height: normal;
+  }
+  .volume {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .volume-section,
+  .volume2 {
+    width: 100%;
+  }
+  .volume-section {
+    padding: 20px;
+  }
+  .stat-item h3 {
+    font-size: 14px;
+  }
+  .stat-item h2 {
+    font-size: 20px;
+    margin-top: 10px !important;
+  }
+  .volumeimg {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-right: 0;
+  }
+  .volumeget {
+    width: 50%;
+  }
+  .volumeimg p {
+    font-size: 20px;
+  }
+  .volumeimg button {
+    width: 50%;
+    margin-top: 0;
+  }
+  .provide {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .provide h2 {
+    font-size: 24px;
+    margin-top: 70px;
+  }
+  .provide1 {
+    width: 100%;
+  }
+  .provide2 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 104px;
+  }
+  .provide2 button {
+    bottom: 25px;
+  }
+  .api3 img {
+    width: 100%;
+  }
+  .allwallet {
+    width: 100%;
+    padding: 0;
+  }
+  .api8,
+  .api9,
+  .api10,
+  .api6 {
+    width: 48%;
+    justify-content: start;
+  }
+  .startline {
+    transform: rotate(90deg);
+    width: 15%;
+    top: 30%;
+    left: 43%;
+  }
+  .starticon {
+    transform: rotate(90deg);
+    top: 34%;
+    left: 48.2%;
+  }
+  .startline1 {
+    transform: rotate(90deg);
+    width: 15%;
+    top: 68%;
+    left: 43%;
+  }
+  .starticon1 {
+    transform: rotate(90deg);
+    top: 72%;
+    left: 48.2%;
+  }
+  .link .api1 .apitop .api3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .affiliate {
+    padding-bottom: 420px;
+  }
+  .program {
+    width: 100%;
+    top: 480px;
+  }
+  .exoli2 p {
+    font-size: 14px;
+  }
+  .exoli5 h2 {
+    font-size: 28px;
+    line-height: 50px;
+  }
+  .api6,
+  .api7 {
+    font-size: 14px;
+    gap: 2px;
+  }
+  .startline {
+    transform: rotate(90deg);
+    width: 15%;
+    top: 30%;
+    left: 43%;
+  }
+  .starticon {
+    transform: rotate(90deg);
+    top: 33%;
+    left: 48%;
+  }
+  .startline1 {
+    transform: rotate(90deg);
+    width: 15%;
+    top: 68%;
+    left: 43%;
+  }
+  .starticon1 {
+    transform: rotate(90deg);
+    top: 71%;
+    left: 48%;
+  }
+}
+
+@media (max-width: 325px) {
+  .startline {
+    transform: rotate(90deg);
+    width: 15%;
+    top: 30%;
+    left: 43%;
+  }
+  .starticon {
+    transform: rotate(90deg);
+    top: 32%;
+    left: 47.3%;
+  }
+  .startline1 {
+    transform: rotate(90deg);
+    width: 15%;
+    top: 68%;
+    left: 43%;
+  }
+  .starticon1 {
+    transform: rotate(90deg);
+    top: 70%;
+    left: 47.3%;
+  }
 }

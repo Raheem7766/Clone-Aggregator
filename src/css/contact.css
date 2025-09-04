@@ -178,6 +178,98 @@
 }
 
 .contact4 p span:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+@media (max-width: 1442px) {
+  .contact {
+    width: 83%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .contact {
+    width: 92%;
+  }
+  .contact2 {
+    padding-right: 0;
+  }
+  .contact4 {
+    width: 54.5%;
+    height: auto;
+    padding: 20px 20px;
+    margin-top: 0;
+  }
+  .contact4 h2 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact2 {
+    flex-wrap: wrap;
+  }
+  .contact3,
+  .contact4 {
+    width: 100%;
+  }
+  .contact3 h2 {
+    margin-top: 10px;
+    font-size: 32px;
+  }
+  .contact3 h3 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .mblmail {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mail {
+    padding-top: 0;
+  }
+  .part {
+    margin-top: 0 !important;
+  }
+  .mblmail1,
+  .mblmail2 {
+    width: 50%;
+  }
+  .contact4 {
+    margin-top: 23px;
+  }
+  .contact4 h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .contact4 h4 {
+    text-align: center;
+  }
+  .contact4 textarea {
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 430px) {
+  .mblmail {
+    flex-wrap: wrap;
+  }
+  .mblmail1,
+  .mblmail2 {
+    width: 100%;
+  }
+  .contact4 h2 {
+    text-align: start;
+  }
+  .contact4 h4 {
+    text-align: start;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact2 {
+    margin-top: 43px;
+  }
+}

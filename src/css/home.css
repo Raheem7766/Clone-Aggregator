@@ -1,21 +1,96 @@
-.home{
-    width: 75.5%;
-    height: auto;
-    padding-bottom: 30px;
-    margin: auto;
-    margin-top: 3.5%;
-    padding: 0px 40px;
+.home {
+  width: 75.5%;
+  height: auto;
+  padding-bottom: 30px;
+  margin: auto;
+  margin-top: 3.5%;
+  padding: 0px 40px;
 }
-.hometext{
-    padding-right: 215px;
+.hometext {
+  padding-right: 215px;
 }
-.home h2{
-    color: white;
-    font-size: 56px;
-    font-weight: 600;
-    line-height: 70px;
+.home h2 {
+  color: white;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 70px;
 }
 
-.home h2 span{
-    color: #7B7DFB;
+.home h2 span {
+  color: #7b7dfb;
+}
+
+@media (max-width: 1445px) {
+  .home{
+    width: 82.5%;
+    padding: 0px !important;
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 1027px) {
+  .home {
+    padding: 0;
+    width: 100%;
+    margin-top: 3.5%;
+  }
+  .hometext {
+    padding: 20px 44px;
+    padding-right: 200px !important;
+  }
+  .home h2 {
+    font-size: 42px !important;
+    line-height: 130%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .home{
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .hometext {
+    padding: 7px 2rem;
+    padding-right: 6rem !important;
+    margin-top: 45px;
+  }
+  .home h2{
+    font-size: 38px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    padding: 0;
+    width: 100%;
+  }
+  .hometext {
+    padding: 7px 16px;
+  }
+  .home h2 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 0;
+    width: 100%;
+  }
+  .hometext {
+    padding: 7px 16px;
+    margin-top: 0px !important;
+    padding-top: 0;
+    padding-right: 0px !important;
+  }
+  .home h2 {
+    font-size: 26px !important;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 14px;
+  }
 }

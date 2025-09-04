@@ -28,17 +28,15 @@ function DexTab() {
 
   const [countdown, setCountdown] = useState(9);
 
-  // separate states for left dropdown
   const [leftDropdownOpen, setLeftDropdownOpen] = useState(false);
   const [leftSearch, setLeftSearch] = useState("");
   const [leftFocused, setLeftFocused] = useState(false);
   const [leftCurrency, setLeftCurrency] = useState({
     code: "BTC",
-    name: "Bitcoin",
+    name: "Btc",
     img: bnb,
   });
 
-  // separate states for right dropdown
   const [rightDropdownOpen, setRightDropdownOpen] = useState(false);
   const [rightSearch, setRightSearch] = useState("");
   const [rightFocused, setRightFocused] = useState(false);
@@ -62,14 +60,13 @@ function DexTab() {
     { code: "USDC", name: "USD Coin", img: usdc },
     { code: "WEPE", name: "Wall Street Pepe", img: wepe },
     { code: "BNB", name: "BNB", img: bnb },
-    { code: "BTC", name: "Bitcoin", img: steth },
+    { code: "BTC", name: "Btc", img: steth },
     { code: "USDT", name: "Tether", img: wsteth },
     { code: "SOL", name: "Solana", img: link },
     { code: "ADA", name: "Cardano", img: wbeth },
     { code: "WTC", name: "Wbtc", img: wbtc },
   ];
 
-  // filter for both dropdowns
   const filteredLeft = cryptocurrencies.filter(
     (c) =>
       c.name.toLowerCase().includes(leftSearch.toLowerCase()) ||
@@ -88,15 +85,12 @@ function DexTab() {
     const lp = leftPay;
     const rp = rightPay;
 
-    // swap currencies
     setLeftCurrency(rc);
     setRightCurrency(lc);
 
-    // swap amounts
     setLeftPay(rp);
     setRightPay(lp);
 
-    // flip arrow order
     setIsSwapped((s) => !s);
   };
 
@@ -108,6 +102,12 @@ function DexTab() {
           <div className="wallet-head-count">
             <div className="wallet-count">1 OF 3</div>
             <h3>Start exchange</h3>
+          </div>
+          <div className="wallet-head-auto mblauto">
+            <span>Auto refreshes in {countdown} sec</span>
+            <div className="refresh">
+              <MdRefresh size={22} color="#FFFFFF" className="refresh-icon" />
+            </div>
           </div>
         </div>
 
@@ -125,7 +125,7 @@ function DexTab() {
               {loading ? (
                 <div className="dexSkeleton"></div>
               ) : (
-                <input type="text" value={leftPay} readOnly />
+                <input type="text" value={leftPay} />
               )}
             </h4>
           </div>
@@ -202,6 +202,7 @@ function DexTab() {
         </div>
         <p className="fee">No extra fees</p>
       </div>
+
       <div
         className="arrow dexarrow"
         onMouseEnter={() => setHovered(true)}
@@ -312,11 +313,28 @@ function DexTab() {
             </div>
           )}
         </div>
+
         <div className="dexamount dexamountright">1 BTC ≈ 395.25863017 XMR</div>
-        <div className="btns dexbtn">
+
+        <div className="btns dexbtn ">
           <button className="btn2">Exchange Now</button>
         </div>
       </div>
+
+      <div className="mblamount">
+        <div className="dexamount mbldex">
+          <span>
+            Min: <strong>0.001 BTC</strong>
+          </span>
+          <span>
+            Max: <strong>5.079 BTC</strong>
+          </span>
+        </div>
+        <div className="dexamount dexamountright mbldex">
+          1 BTC ≈ 395.25863017 XMR
+        </div>
+      </div>
+      <p className="fee mblfee">No extra fees</p>
     </div>
   );
 }

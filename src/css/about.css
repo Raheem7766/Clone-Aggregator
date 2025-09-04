@@ -170,6 +170,147 @@
   border-radius: 3px;
 }
 
-.about11 button:hover{
-    background-color: #95FBD7;
+.about11 button:hover {
+  background-color: #95fbd7;
+}
+
+@media (max-width: 1442px) {
+  .about {
+    width: 83%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .about {
+    width: 92%;
+  }
+  .about2 {
+    border: none;
+  }
+  .about3 h2 {
+    margin-top: 72px;
+    font-size: 38px;
+  }
+  .about3 {
+    padding-right: 0;
+  }
+  .about3 p {
+    font-size: 16px;
+  }
+  .about4 {
+    padding-top: 150px;
+  }
+  .about4 img {
+    width: 80%;
+  }
+  .about5 h3 {
+    font-size: 38px;
+  }
+  .about7 {
+    width: 48%;
+  }
+  .about9 {
+    padding: 1px 110px;
+    justify-content: center;
+    align-items: center;
+  }
+  .about10 {
+    height: auto;
+    width: 40%;
+  }
+  .about11 p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about2{
+    flex-direction: column-reverse;
+  }
+  .about4{
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .about4 img{
+    width: 62%;
+  }
+  .about3{
+    width: 100%;
+  }
+  .about3 h2{
+    margin-top: 40px;
+    font-size: 32px;
+  }
+  .about3 p{
+    margin-bottom: 10px;
+  }
+  .about7 h4{
+    font-size: 18px;
+  }
+  .about7 p{
+    width: 100%;
+  }
+  .about9 {
+    height: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .about10 {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about11{
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 430px) {
+  .about4{
+    padding-top: 60px;
+  }
+  .about4 img{
+    width: 100%;
+  }
+  .about5 h3{
+    font-size: 28px;
+  }
+  .about7{
+    width: 100%;
+  }
+  .about9{
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 0;
+  }
+  .about10 , .about11{
+    width: 100%;
+    height: max-content;
+  }
+  .about10 img{
+    width: 65%;
+  }
+  .about11{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about11 {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+  .about11 button{
+    margin-top: 0;
+  }
 }

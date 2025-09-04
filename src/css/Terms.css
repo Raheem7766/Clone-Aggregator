@@ -78,6 +78,7 @@
 .stats h1 {
   font-size: 37px;
   font-weight: 500;
+  color: #ffffff;
 }
 
 .stats p {
@@ -296,6 +297,7 @@
   justify-content: center;
   cursor: pointer;
   z-index: 10;
+  color: white;
 }
 
 .saysarrow1:hover svg {
@@ -315,6 +317,7 @@
   justify-content: center;
   cursor: pointer;
   z-index: 10;
+  color: white;
 }
 
 .saysarrow2:hover svg {
@@ -451,6 +454,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
 .press1 h2 {
   font-size: 36px;
@@ -480,6 +484,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  color: white;
 }
 .press3 {
   width: 100%;
@@ -551,6 +556,11 @@
 
 .join2 img {
   width: 60%;
+  filter: grayscale(1);
+}
+
+.join2:hover img{
+  filter: none;
 }
 
 .join button {
@@ -564,4 +574,227 @@
   padding: 12px 32px;
   border-radius: 3px;
   margin-bottom: 88px;
+}
+
+@media (max-width: 1025px) {
+  .terms,
+  .stats {
+    width: 92%;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .term1 {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .limitParent {
+    padding: 0;
+  }
+  .stats p {
+    width: 55%;
+  }
+  .says, .best, .go, .press, .join {
+    width: 92%;
+    margin: auto;
+  }
+  .says1 h2 {
+    font-size: 32px !important;
+  }
+  .says4 h2 {
+    font-size: 18px !important;
+  }
+  .says4 p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .saysParent {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: self-start;
+  }
+  .saysauth {
+    width: 100%;
+  }
+  .index2 .says4 .saysParent {
+    margin-top: 0;
+  }
+  .best{
+    margin-top: 100px;
+  }
+  .best h2{
+    font-size: 36px !important;
+  }
+  .best p{
+    margin-top: 0;
+  }
+  .best2 h2{
+    font-size: 24px !important;
+  }
+  .best2 p{
+    margin-top: 0 !important;
+  }
+  .home h2{
+    font-size: 36px !important;
+  }
+  .go6 img{
+    width: 65%;
+  }
+  .press4{
+    width: 33.34% !important;
+  }
+  .join2{
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .terms {
+    flex-direction: column;
+    margin: auto;
+  }
+  .term1 {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .term {
+    width: 100%;
+  }
+  .termig {
+    padding-left: 0;
+  }
+  .term2 span {
+    font-size: 20px;
+  }
+
+  .stats {
+    height: auto;
+    margin-top: 250px;
+  }
+  .stats p {
+    width: 70%;
+    font-size: 16px;
+  }
+  .stats1 {
+    flex-wrap: wrap;
+  }
+  .stats2 {
+    width: 50%;
+  }
+  .best h2{
+    font-size: 32px !important;
+  }
+  .best p{
+    font-size: 16px;
+  }
+  .best1{
+    flex-wrap: wrap;
+  }
+  .best2{
+    width: 50%;
+  }
+  .best3{
+    margin-top: 0;
+  }
+  .best2 h2{
+    font-size: 20px !important;
+    margin-top: 20px;
+  }
+  .home h2{
+    font-size: 32px !important;
+  }
+  .home p{
+    font-size: 16px;
+    width: 100%;
+  }
+  .go6 img{
+    width: 75%;
+  }
+  .join2{
+    width: 33%;
+  }
+}
+
+@media (max-width: 425px) {
+  .terms {
+    margin-top: 40px;
+  }
+  .term2 span {
+    font-size: 16px;
+  }
+  .limitP {
+    font-size: 15px;
+  }
+  .stats {
+    margin-top: 300px;
+  }
+  .stats p {
+    width: 100%;
+    font-size: 15px;
+  }
+  .stats2 {
+    width: 100%;
+  }
+  .says{
+    padding-top: 0;
+  }
+  .says1{
+    height: auto;
+    flex-direction: column-reverse;
+    padding-right: 0;
+  }
+  .says1 img{
+    height: 30%;
+    width: 40%;
+  }
+  .says1 h2{
+    font-size: 28px !important;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .says2{
+    margin-top: 20px;
+  }
+  .slider-track{
+    width: 416%;
+  }
+  .index2{
+    margin-left: 0;
+  }
+  .says2{
+    height: auto;
+  }
+  .best h2{
+    font-size: 28px !important;
+  }
+  .best p{
+    font-size: 16px;
+  }
+  .best2{
+    width: 100%;
+  }
+  .go{
+    flex-direction: column-reverse;
+  }
+  .go1{
+    width: 100%;
+  }
+  .press{
+    margin-top: 100px;
+  }
+  .presshead{
+    flex-direction: column;
+  }
+  .press2{
+    width: 100%;
+  }
+  .press4{
+    width: 100% !important;
+  }
+  .join2{
+    width: 49%;
+    background-color: #272C32;
+  }
+}
+
+@media (max-width: 425px) {
+  
 }

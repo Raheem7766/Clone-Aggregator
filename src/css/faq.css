@@ -114,6 +114,9 @@
 .faq8 {
   height: 125px;
   width: 15.5%;
+   position: sticky;      
+  top:20%;            
+  transform: translateY(-50%);
 }
 
 .faqbtn {
@@ -129,11 +132,65 @@
   cursor: pointer;
 }
 
-.faqbtn1{
-    border-left: 1px solid #55565E;
-    color: #8F8F9B;
+.faqbtn1 {
+  border-left: 1px solid #55565e;
+  color: #8f8f9b;
 }
 
-.faqbtn1:hover{
-    color: white;
+.faqbtn1:hover {
+  color: white;
+}
+
+.faqbtn.active {
+  border-left: 2px solid #65f0bf;
+  color: white;
+}
+
+
+@media (max-width: 1442px) {
+  .faq {
+    width: 83%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .faq{
+    width: 92%;
+  }
+  .faqdata{
+    width: 100%;
+  }
+  .faq8{
+    display: none;
+  }
+  .faq2 h2{
+    font-size: 32px;
+    margin-top: 75px;
+  }
+  .faq3{
+    margin-top: 50px;
+  }
+  .faq-question h4{
+    font-size: 18px;
+  }
+  .faq-answer p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 430px) {
+  .faq h2{
+    font-size: 28px;
+    margin-top: 50px;
+  }
+  .faq5 h3{
+    font-size: 18px;
+  }
+  .faq5 img{
+    width: 10%;
+  }
+  .faq3{
+    padding-right: 0;
+  }
+
 }
