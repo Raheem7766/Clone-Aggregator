@@ -24,7 +24,7 @@ import wbtc from "../assets/wbtc.webp";
 import DexTab from "./tabs/DexTab";
 
 function ExchangeBox() {
-  const [activeTab, setActiveTab] = useState("exchange");
+  const [activeTab, setActiveTab] = useState("dex");
   const [countdown, setCountdown] = useState(9);
   const [hovered, setHovered] = useState(false);
   const [isSwapped, setIsSwapped] = useState(false);

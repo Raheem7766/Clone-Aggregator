@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Faq from "./pages/Faq";
 import Contact from "./pages/Contact";
 import Affiliate from "./pages/Affiliate";
+import SwapZone from "./pages/SwapZone";
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
           }
         />
         <Route path="/affiliate-program" element={<Affiliate />} />
+        <Route path="/exchange/btc/xmr" element={<SwapZone />} />
       </Routes>
       <Footer />  
     </>

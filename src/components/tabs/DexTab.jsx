@@ -20,6 +20,7 @@ import wbeth from "../../assets/wbeth.webp";
 import wbtc from "../../assets/wbtc.webp";
 import { MdRefresh } from "react-icons/md";
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function DexTab() {
   const [loading, setLoading] = useState(true);
@@ -47,7 +48,7 @@ function DexTab() {
   });
   const [hovered, setHovered] = useState(false);
   const [isSwapped, setIsSwapped] = useState(false);
-
+  const navigate = useNavigate()
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
@@ -93,6 +94,7 @@ function DexTab() {
 
     setIsSwapped((s) => !s);
   };
+
 
   return (
     <div className="dexswap">
@@ -317,7 +319,7 @@ function DexTab() {
         <div className="dexamount dexamountright">1 BTC ≈ 395.25863017 XMR</div>
 
         <div className="btns dexbtn ">
-          <button className="btn2">Exchange Now</button>
+          <button className="btn2" onClick={()=> navigate("/exchange/btc/xmr")}>Exchange Now</button>
         </div>
       </div>
 

@@ -1,0 +1,666 @@
+.zone {
+  width: 71%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+  padding-bottom: 50px;
+}
+.zone1 {
+  width: 100%;
+  color: #abb6c1;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.zone1 span {
+  color: white;
+}
+
+.zone h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  margin-top: 50px;
+}
+
+.zone h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c1c8d1;
+  margin-top: 8px;
+}
+
+.zone h3 span {
+  color: white;
+  font-weight: 500;
+}
+
+.zone2 {
+  width: 100%;
+  height: max-content;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.zone3 {
+  height: 100%;
+  width: 49%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  background-color: #272829;
+  padding-bottom: 20px;
+  border-radius: 6px;
+}
+
+.zone4 {
+  height: max-content;
+  width: 50%;
+  padding: 20px;
+}
+
+.zone4 h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #a3a9af;
+  transition: linear 0.3s ease;
+}
+
+.zone4Input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #717d89;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  display: flex;
+  position: relative;
+}
+
+.zone4Input:focus-within {
+  border: 1px solid #7b7dfb;
+}
+
+.zone4Input input {
+  height: 100%;
+  width: 45%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+}
+
+.zonedrop {
+  height: 100%;
+  width: 55%;
+  background-color: #282d33;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.zone-wallet-Icon {
+  height: 33px;
+  width: 33px;
+  border-radius: 25%;
+  background-color: #3c4249;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zone-wallet-Icon img {
+  height: 75%;
+  width: 75%;
+}
+
+.zonedrop span {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.zonedrop svg {
+  margin-left: 20px;
+}
+
+.zonearrow {
+  left: 47%;
+  top: 29%;
+}
+
+.zone-currency-dropdown {
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+}
+
+.zone-currency-dropdown .dropdown-search {
+  padding: 4px;
+}
+
+.zone-currency-dropdown .dropdown-search .search-input {
+  padding: 8px;
+  width: 100%;
+}
+
+.zone-currency-dropdown .dropdown-search .search-input input {
+  width: max-content;
+  font-size: 14px;
+}
+
+.zone-currency-dropdown .dropdown-search .search-input input::placeholder {
+  font-size: 14px !important;
+}
+
+.zone-list {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #3c4249;
+  display: flex;
+  gap: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.zone-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.zone-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.zone-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.zone-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.zone-list {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.zone-list h3 {
+  font-size: 13px;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.zone-list1 {
+  width: 100%;
+  max-height: 260px; 
+  overflow-y: auto; 
+  overflow-x: hidden;
+  padding-bottom: 4px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #7b7dfb #1e1e1e;
+}
+
+.zone-list1::-webkit-scrollbar {
+  width: 6px; 
+}
+
+.zone-list1::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.zone-list1::-webkit-scrollbar-thumb {
+  background: #7b7dfb;
+  border-radius: 4px;
+}
+
+.zone-list1::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.zone-list1 h3 {
+  font-size: 13px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.zone-drop {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #3c4249;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.zone-drop img {
+  height: 70%;
+}
+
+.zone-drop span {
+  font-size: 13px;
+  color: white;
+}
+
+.zone-code h4 {
+  font-weight: 400;
+}
+
+.category-tab.active h3 {
+  color: white;
+  font-weight: 500;
+  border-bottom: 1px solid #27b7eb;
+}
+.fee1 {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.fee1 p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #a3a9af;
+  transition: linear 0.3s ease;
+}
+
+.fee1 p span {
+  color: #27b63a;
+  font-weight: 700;
+}
+
+.fee1 button {
+  height: max-content;
+  padding: 10px 19px;
+  background-color: #65f0bf;
+  color: #191d21;
+  border: none;
+  outline: none;
+  border-radius: 3%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.zoneright {
+  height: 100%;
+  width: 50%;
+}
+
+.zoneright1 {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zonerightt {
+  display: flex;
+  gap: 10px;
+}
+
+.zone-best {
+  border: 1px solid #555;
+  width: max-content;
+  height: max-content;
+  border-radius: 7px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.zone-best:hover {
+  background-color: #313234;
+}
+
+.zone-tab {
+  border: 1px solid #555;
+  width: max-content;
+  height: auto;
+  padding: 3px;
+  border-radius: 7px;
+  display: flex;
+  gap: 10px;
+}
+
+.zone-tab .zone-best {
+  background-color: #313234;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.ref {
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rightcont {
+  width: 100%;
+  height: 187px;
+  background-color: #101010;
+  border-radius: 6px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.rightcont1 {
+  width: 60%;
+  height: 100%;
+  padding: 15px;
+}
+.rightconthead {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center !important;
+  gap: 10px;
+}
+
+.rightconthead img {
+  height: 100%;
+}
+
+.rightconthead h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-top: 0;
+}
+
+.rightconthead h5 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #a3a9af;
+}
+
+.rightconthead1 {
+  width: 100%;
+  border-top: 1px solid #313234;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.rightconthead1 h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a3a9af;
+}
+
+.rightconthead1 h1 span {
+  color: white;
+}
+.rare {
+  margin-left: 6px;
+}
+
+.rightcont2 {
+  width: 40%;
+  background-color: #272829;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 15px;
+}
+
+.rightnum {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rightnum p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rightnum p span {
+  color: #a3a9b0;
+}
+
+.rightcont2 h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a3a9af;
+  margin-top: 10px;
+}
+
+.rightcont2 button {
+  height: max-content;
+  width: 100%;
+  padding: 4px 19px;
+  background-color: #65f0bf;
+  color: #191d21;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.show-more-btn {
+  background-color: #101010;
+  border-radius: 6px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.show-more-btn button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #a3a9b0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* ----------- For medium screens (tablets) ----------- */
+@media (max-width: 1024px) {
+  .zone {
+    width: 93%;
+  }
+  .zone3 {
+    width: 40%;
+    flex-direction: column;
+  }
+  .zone4 {
+    width: 100%;
+  }
+  .zonearrow {
+    top: 40%;
+    rotate: 90deg;
+  }
+  .zoneright {
+    width: 60%;
+  }
+}
+
+/* ----------- For small screens (mobile) ----------- */
+@media (max-width: 769px) {
+  .zone {
+    width: 80% !important;
+  }
+  .zone2 {
+    flex-direction: column;
+  }
+  .zone3,
+  .zone4,
+  .zoneright {
+    width: 100%;
+  }
+
+  .zone4,
+  .fee1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .rightcont {
+    height: auto;
+  }
+
+  .rightcont1,
+  .rightcont2 {
+    width: 100%;
+  }
+
+  .rightcont2 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 6px;
+  }
+  .zone {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .zone h2 {
+    font-size: 17px;
+  }
+
+  .zone h3 {
+    font-size: 14px;
+  }
+  .rightconthead h5 {
+    font-size: 12px;
+  }
+
+  .zone4Input {
+    height: auto;
+  }
+
+  .zone4Input input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .zonearrow {
+    top: 40%;
+    rotate: 0deg;
+  }
+
+  .zonedrop {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .rightnum p {
+    font-size: 18px;
+  }
+
+  .rightcont2 button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  .zone {
+    width: 95% !important;
+  }
+  .zone2 {
+    /* overflow: hidden; */
+  }
+  .fee1 {
+    flex-direction: column-reverse;
+    align-items: self-start;
+  }
+  .fee1 button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .zoneright1 {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .rightcont {
+    height: auto;
+    flex-direction: column-reverse;
+    background-color: #1d1d1d;
+    border-radius: 0;
+  }
+  .rightcont1,
+  .show-more-btn {
+    background-color: #272829;
+  }
+  .rightcont2 {
+    border-radius: 0;
+  }
+  .rightconthead1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    border: none;
+  }
+  .zonearrow {
+    top: 35%;
+  }
+  .zone3{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+  .zonerightt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .zone-tab{
+    width: 100% !important;
+  }
+  .zone-tab .zone-best{
+    width: 33%;
+  }
+  .zone-best{
+    display: none;
+  }
+  .rightconthead1 h1{
+    font-size: 13px;
+  }
+  .rightconthead{
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .zonearrow {
+    top: 32%;
+  }
+}
