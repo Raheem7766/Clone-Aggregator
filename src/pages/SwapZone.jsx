@@ -8,13 +8,10 @@ import {
   FaArrowRight,
   FaChevronDown,
   FaChevronUp,
-  FaLock,
 } from "react-icons/fa";
 import { BiSearch } from "react-icons/bi";
-import { GrRefresh } from "react-icons/gr";
-import changenow from "../assets/changenow.svg";
-import { HiOutlineExclamationCircle } from "react-icons/hi";
 import ZoneRightCont from "../components/ZoneRightCont";
+import { useNavigate } from "react-router-dom";
 
 export default function SwapZone() {
   const [hovered, setHovered] = useState(false);
@@ -30,6 +27,7 @@ export default function SwapZone() {
   const rightDropdownRef = useRef(null);
   const leftCurrencyListRef = useRef(null);
   const rightCurrencyListRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -157,6 +155,7 @@ export default function SwapZone() {
   };
 
   const filteredCategories = {};
+
   Object.keys(currencyCategories).forEach((category) => {
     const filteredCurrencies = currencyCategories[category].filter(
       (currency) =>
@@ -198,7 +197,6 @@ export default function SwapZone() {
       </h3>
 
       <div className="zone2">
-        {/* <div className="zonee2"></div> */}
         <div className="zone3">
           {/* LEFT BOX */}
           <div className="zone4">
@@ -440,43 +438,13 @@ export default function SwapZone() {
             <p>
               Swapzone fee: <span>0%</span>
             </p>
-            <button>Quick Exchange</button>
+            <button onClick={() => navigate("/exchange/offer")}>
+              Quick Exchange
+            </button>
           </div>
         </div>
         <div className="zoneright">
-          
-          {/* <div className="rightcont">
-            <div className="rightcont1">
-              <div className="rightconthead">
-                <img src={changenow} alt="" />
-                <h2>ChangeNOW</h2>
-                <h5>4.8/5 121 reviews</h5>
-              </div>
-              <div className="rightconthead1">
-                <h1>
-                  Time: <span>26 min</span>
-                </h1>
-                <h1>
-                  KYC: <span className="rare">Rare</span>
-                </h1>
-                <h1>
-                  OFC:{" "}
-                  <span className="rare">
-                    0/4 <HiOutlineExclamationCircle color="#A3A9B0" size={20} />
-                  </span>
-                </h1>
-              </div>
-            </div>
-            <div className="rightcont2">
-              <div className="rightnum">
-                <FaLock color="white" />
-                <p>20.61109806 <span>XMR</span></p>
-              </div>
-              <h4>~$5,613.38</h4>
-              <button>EXCHANGE</button>
-            </div>
-          </div> */}
-          <ZoneRightCont/>
+          <ZoneRightCont />
         </div>
       </div>
     </div>
