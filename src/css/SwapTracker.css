@@ -51,7 +51,8 @@
   rotate: 90deg;
   width: max-content;
   margin-top: 178px;
-  transition: 0.4s ease linear;
+   transform: scaleY(0.9);
+  transition: all 0.4s ease-in-out;
 }
 
 .swap-tracker.expanded {
@@ -60,6 +61,7 @@
   top: 570px;
   justify-content: left !important;
   padding-top: 20px;
+  transform: scaleY(1);
 }
 
 .input-container {

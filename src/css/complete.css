@@ -1,0 +1,421 @@
+.complete {
+  width: 71%;
+  height: auto;
+  margin: auto;
+  margin-top: 38px;
+  padding-bottom: 50px;
+}
+
+.complete1 {
+  width: 100%;
+  color: #abb6c1;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.complete1 span {
+  color: white;
+}
+
+.complete2 {
+  width: 100%;
+  height: 525px;
+  background-color: #22272b;
+  margin-top: 42px;
+  border-radius: 6px;
+  border-top: 2px solid #65f0bf;
+  padding: 15px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+.completeH {
+  height: 553px;
+}
+.complete3 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.complete3 span {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+.five {
+  background-color: #3c4249;
+  height: max-content;
+  width: max-content;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #9b9b9b;
+  border-radius: 4px;
+}
+
+.comp {
+  font-size: 15px !important;
+}
+
+.complete4 {
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.complete4 h3 {
+  font-size: 34px;
+  font-weight: 500;
+  color: white;
+  margin-top: 0;
+  line-height: normal;
+}
+
+.completeP {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+
+.completeRateId {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 30px;
+}
+
+.completeRate {
+  height: auto;
+  width: max-content;
+  display: flex;
+  gap: 7px;
+}
+.completeRate1{
+    display: flex;
+    /* align-items: center; */
+    gap: 5px;
+}
+
+.completeRate h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #abb6c1;
+}
+
+.completeRate h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.completeInfo {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.completeInfo1 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  margin-top: 17px;
+}
+
+.completeInfoleft {
+  height: auto;
+  width: max-content;
+}
+
+.completeInforight {
+  width: 90%;
+}
+.completeInfo h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.completeSend {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.completeIcon {
+  height: 39px;
+  width: 40px;
+  padding: 8px;
+  background-color: #3b4149;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.completeIcon img {
+  height: 100%;
+  width: 100%;
+}
+
+.completeSend1 {
+  width: max-content;
+  height: auto;
+}
+
+.completeSend1 h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #abb6c1;
+  margin-bottom: 0;
+}
+
+.completeSend1 h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-top: 0;
+  line-height: normal;
+  margin-bottom: 0;
+}
+.hashP {
+  height: auto;
+  width: auto;
+  display: flex;
+}
+.hashPP .hash {
+  margin-left: 9.6%;
+}
+.hash {
+  margin-left: 11%;
+}
+
+.hashNum {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.hash h4 {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #7275e4;
+  flex: 1;
+  margin: 2;
+  min-height: 20px;
+}
+
+.hash-singleline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hash-multiline {
+  white-space: pre-wrap;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.hashIcon {
+  flex-shrink: 0;
+  color: #65f0bf;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2px;
+}
+
+.hash1 {
+  margin-left: 3.9%;
+}
+
+.hash1 h4 {
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.completeLine {
+  height: 36px;
+  width: 40px;
+  border-left: 2px solid #3b4149;
+  margin-left: 20px;
+}
+
+.completeLineEx {
+  height: 70px;
+}
+
+.completeget {
+  margin-top: 37px;
+}
+
+.completeTrans {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.completeTrans h2 {
+  font-size: 21px;
+  font-weight: 500;
+  color: white;
+}
+
+.completeTrans svg {
+  margin-top: -8px;
+}
+
+.completeBtn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+  padding-right: 6px;
+}
+
+.completeBtn button {
+  border: none;
+  outline: none;
+  padding: 13px;
+  font-weight: 600;
+  background-color: rgb(100, 240, 191);
+  color: rgb(25, 29, 33);
+  margin-top: 15px;
+  border-radius: 5px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+@media (max-width: 1440px) {
+  .complete {
+    width: 83%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .complete {
+    width: 92.5%;
+  }
+  .hashP {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hash,
+  .hash1,
+  .hashPP .hash {
+    margin-left: 0;
+  }
+
+  .completeSend {
+    gap: 110px;
+  }
+  .completeLine {
+    height: 100px;
+  }
+  .complete2 {
+    height: 640px;
+  }
+
+  .completeLineEx {
+    height: 115px;
+  }
+
+  .completeH {
+    height: 670px;
+  }
+}
+
+@media (max-width: 768px) {
+  .completeSend {
+    gap: 80px;
+  }
+  .completeInforight {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .complete2 {
+    padding: 10px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .completeRateId {
+    flex-direction: column;
+  }
+  .complete4 h3 {
+    font-size: 20px;
+  }
+
+  .completeP {
+    margin-top: 0;
+  }
+
+  .completeRateId {
+    align-items: start;
+    gap: 10px;
+  }
+
+  .completeSend {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .completeLine {
+    height: 155px;
+  }
+  .completeLineEx {
+    height: 193px;
+  }
+  .hash1 h4 {
+    width: 87%;
+    font-size: 15px;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+  }
+
+  .hash1 {
+    max-width: 100%; 
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 380px) {
+    .complete{
+        width: 100%;
+    }
+    .complete1{
+        width: 93%;
+        margin: auto;
+    }
+    .complete2{
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .completeRate{
+        flex-direction: column;
+    }
+
+}

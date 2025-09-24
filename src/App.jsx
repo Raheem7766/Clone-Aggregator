@@ -13,6 +13,7 @@ import Affiliate from "./pages/Affiliate";
 import SwapZone from "./pages/SwapZone";
 import Offer from "./pages/Offer";
 import Transaction from "./pages/Transaction";
+import Complete from "./pages/Complete";
 
 function App() {
   return (
@@ -69,6 +70,7 @@ function App() {
         <Route path="/exchange/btc/xmr" element={<SwapZone />} />
         <Route path="/exchange/offer" element={<Offer />} />
         <Route path="/exchange/transaction" element={<Transaction />} />
+        <Route path="/complete/:id" element={<Complete />} />
       </Routes>
       <Footer />  
     </>

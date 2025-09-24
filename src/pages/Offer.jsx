@@ -514,7 +514,9 @@ function Offer() {
                       value={XRPId}
                       onChange={(e) => setXRPId(e.target.value)}
                     />
-                    <label htmlFor="XRPId">Destination Tag XRP (optional)</label>
+                    <label htmlFor="XRPId">
+                      Destination Tag XRP (optional)
+                    </label>
                     {XRPId === "" && (
                       <h4
                         onClick={() => handlePaste(setXRPId)}
@@ -535,7 +537,9 @@ function Offer() {
                       value={refundXRPId}
                       onChange={(e) => setrefundXRPId(e.target.value)}
                     />
-                    <label htmlFor="refundXRPId">Refund Destination Tag XRP (optional)</label>
+                    <label htmlFor="refundXRPId">
+                      Refund Destination Tag XRP (optional)
+                    </label>
                     {refundXRPId === "" && (
                       <h4
                         onClick={() => handlePaste(setrefundXRPId)}
