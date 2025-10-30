@@ -15,7 +15,7 @@ import google from "../assets/google-play.svg";
 import star from "../assets/star.png";
 import kyc from "../assets/kyc.svg";
 import exod from "../assets/exod.png";
-import mone from "../assets/mone.png";
+import mone from "../assets/Mone.png";
 import edge from "../assets/edge.png";
 import cake from "../assets/cake.png";
 import bitcoin from "../assets/bitcoin.png";
